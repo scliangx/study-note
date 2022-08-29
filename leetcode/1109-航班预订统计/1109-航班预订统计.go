@@ -1,5 +1,7 @@
 package main
 
+// 使用差分数组可以对数组中某一个区间的值进行累加
+
 func corpFlightBookings(bookings [][]int, n int) []int {
 	res := make([]int, n)
 	if len(bookings) == 0 {
