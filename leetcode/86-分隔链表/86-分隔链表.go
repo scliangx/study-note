@@ -8,7 +8,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// 86-分隔链表
+// 86-分隔链表 
 func partition(head *ListNode, x int) *ListNode {
 	if head == nil {
 		return nil
