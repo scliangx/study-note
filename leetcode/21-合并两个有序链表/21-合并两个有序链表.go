@@ -8,7 +8,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// 375-合并两个有序链表
+// 21-合并两个有序链表
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	if list1 == nil {
 		return list2
