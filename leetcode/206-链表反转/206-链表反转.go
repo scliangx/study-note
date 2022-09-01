@@ -15,11 +15,22 @@ func reverseList(head *ListNode) *ListNode {
 	}
 	var prev *ListNode
 	cur := head
-	for cur != nil{
+	for cur != nil {
 		next := cur.Next
 		cur.Next = prev
 		prev = cur
 		cur = next
 	}
 	return prev
+}
+
+// recursion 206-链表反转-递归翻转
+func reverseListRecursion(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	last := reverseListRecursion(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return last
 }
