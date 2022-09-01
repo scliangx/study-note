@@ -7,7 +7,7 @@ import (
 // 76-最小覆盖子串
 func minWindow(s string, t string) string {
 	targetMap := make(map[string]int)
-	windown := make(map[string]int)
+	window := make(map[string]int)
 	for i := 0; i < len(t); i++ {
 		targetMap[string(t[i])]++
 	}
@@ -21,9 +21,9 @@ func minWindow(s string, t string) string {
 	start, length := 0, math.MaxInt
 	for right := 0; right < len(s); right++ {
 		c := string(s[right])
-		windown[c]++
+		window[c]++
 		// 当前字符的个数窗口满足
-		if windown[c] == targetMap[c] {
+		if window[c] == targetMap[c] {
 			valid++
 		}
 		// 左边位置是否需要收缩
@@ -35,10 +35,10 @@ func minWindow(s string, t string) string {
 			left++
 			d := string(s[left])
 			// 左边收缩
-			if windown[d] == targetMap[d] {
+			if window[d] == targetMap[d] {
 				valid--
 			}
-			windown[d]--
+			window[d]--
 		}
 	}
 	if length == math.MaxInt {
