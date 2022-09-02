@@ -50,3 +50,11 @@
 ##### 单调找
 - [496-下一个更大元素 I](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/496-%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0%20I/496-%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0%20I.go)
 - [739-每日温度](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/739-%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6/739-%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.go)
+
+##### 单调队列
+- [239-滑动窗口最大值](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/239-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/239-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.go)
+
+
+#### 随机集合
+- [380-O(1) 时间插入、删除和获取随机元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/380-O(1)%20%E6%97%B6%E9%97%B4%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E5%85%83%E7%B4%A0/380-O(1)%20%E6%97%B6%E9%97%B4%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E5%85%83%E7%B4%A0.go)
+- [710-黑名单中的随机数](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/710-%E9%BB%91%E5%90%8D%E5%8D%95%E4%B8%AD%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0/710-%E9%BB%91%E5%90%8D%E5%8D%95%E4%B8%AD%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0.go)
