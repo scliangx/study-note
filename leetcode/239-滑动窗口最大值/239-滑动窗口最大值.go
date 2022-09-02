@@ -21,7 +21,7 @@ func (queue *MonotonicQueue) push(val int) {
 	queue.queue = append(queue.queue, val)
 }
 
-// 对头的就是最大的元素
+// 队头的就是最大的元素
 func (queue *MonotonicQueue) max() int {
 	return queue.queue[0]
 }
