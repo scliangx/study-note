@@ -19,8 +19,10 @@
 - [141-环形链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.go)
 - [142-环形链表II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.go)
 - [86-分隔链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/86-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/86-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.go)
+- [83-删除排序链表中的重复元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.go)
 
 #### 快慢指针(数组)
+- [27-移除元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
 
 #### 滑动窗口
 - [76-最小覆盖子串](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.go)
