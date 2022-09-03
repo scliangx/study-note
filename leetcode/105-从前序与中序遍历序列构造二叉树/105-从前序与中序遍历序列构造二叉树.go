@@ -23,7 +23,7 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 			break
 		}
 	}
-	preMidd:= len(inorder[:index]) + 1
+	preMidd := len(inorder[:index]) + 1
 	root.Left = buildTree(preorder[1:preMidd], inorder[:index+1])
 	root.Right = buildTree(preorder[preMidd:], inorder[index+1:])
 	return root
