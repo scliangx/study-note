@@ -21,7 +21,7 @@ func flatten(root *TreeNode) {
 	right := root.Right
 	root.Right = left
 	root.Left = nil
-	// 寻找当前子树最右子结点
+	// 寻找原本左子树的最右结点，将原本二叉树的右子树连接到原本二叉树左子树的最右结点上
 	p := root
 	for root.Right != nil {
 		p = p.Right
