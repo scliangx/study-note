@@ -12,7 +12,7 @@
 
 #### 双指针(链表)
 - [21-合并两个有序链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/21-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/21-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.go)
-- [86-分隔链表]()
+- [86-分隔链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/86-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/86-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.go)
 - [23-合并k个升序链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/23-%E5%90%88%E5%B9%B6k%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8/23-%E5%90%88%E5%B9%B6k%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8.go)
 - [19-删除链表的倒数第 N 个结点](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/19-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9/19-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9.go)
 - [876-链表的中间结点](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/876-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E7%BB%93%E7%82%B9/876-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E7%BB%93%E7%82%B9.go)
