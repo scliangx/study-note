@@ -1,7 +1,8 @@
 package main
 
-// 使用差分数组可以对数组中某一个区间的值进行累加
 
+// 使用差分数组可以对数组中某一个区间的值进行累加
+// 1109-航班预订统计
 func corpFlightBookings(bookings [][]int, n int) []int {
 	res := make([]int, n)
 	if len(bookings) == 0 {
@@ -33,7 +34,7 @@ func buildDiff(nums []int) []int {
 	return diff
 }
 
-// 对差分数组区间的值累加
+// 对差分数组区间的值做运算
 func increment(i, j, val int, diff *[]int) {
 	(*diff)[i] += val
 	if j+1 < len(*diff) {
