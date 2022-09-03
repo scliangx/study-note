@@ -10,7 +10,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-// 226-翻转二叉树 深度有限
+// 226-翻转二叉树 深度优先
 func invertTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
