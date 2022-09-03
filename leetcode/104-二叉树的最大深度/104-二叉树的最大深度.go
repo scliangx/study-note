@@ -26,3 +26,28 @@ func max(x, y int) int {
 	}
 	return y
 }
+
+// 非递归的方式
+func maxDepth2(root *TreeNode) int {
+	depth := 0
+	if root == nil {
+		return depth
+	}
+	var q []*TreeNode
+	q = append(q, root)
+	for len(q) > 0 {
+		length := len(q)
+		for i := 0; i < length; i++ {
+			node := q[0]
+			q = q[1:]
+			if node.Left != nil {
+				q = append(q, node.Left)
+			}
+			if node.Right != nil {
+				q = append(q, node.Right)
+			}
+		}
+		depth++
+	}
+	return depth
+}
