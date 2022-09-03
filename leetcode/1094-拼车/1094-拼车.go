@@ -1,11 +1,11 @@
 package main
 
-
- 
+// 1094-拼车 
 func carPooling(trips [][]int, capacity int) bool {
 	res := make([]int, 1001)
 	diff := difference(res)
 	for _, trip := range trips {
+		// i - j  区间内上车了多少人
 		i := trip[1]
 		j := trip[2] - 1
 		val := trip[0]
