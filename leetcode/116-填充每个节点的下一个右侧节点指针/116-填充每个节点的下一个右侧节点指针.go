@@ -18,6 +18,7 @@ func connect(root *Node) *Node {
 	var queue []*Node
 	queue = append(queue, root)
 	for len(queue) > 0 {
+		// tmp实际是当前层的数据
 		tmp := queue
 		queue = nil
 		for i, node := range tmp {
@@ -49,8 +50,11 @@ func connectTwoNode(node1 *Node,node2 *Node){
         return
     }
     node1.Next=node2
+    // 连接左子树
     connectTwoNode(node1.Left,node1.Right)
+    // 连接右子树
     connectTwoNode(node2.Left,node2.Right)
+    // 连接不同父结点	
     connectTwoNode(node1.Right,node2.Left)
 }
 
