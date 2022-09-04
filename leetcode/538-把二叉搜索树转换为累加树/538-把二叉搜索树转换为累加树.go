@@ -11,6 +11,7 @@ type TreeNode struct {
 }
 
 // 538-把二叉搜索树转换为累加树
+// 1038-从二叉搜索树到更大和树
 func convertBST(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
