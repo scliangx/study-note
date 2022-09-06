@@ -97,3 +97,9 @@
 
 #### 图
 - [797-所有可能的路径](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/797-%E6%89%80%E6%9C%89%E5%8F%AF%E8%83%BD%E7%9A%84%E8%B7%AF%E5%BE%84/797-%E6%89%80%E6%9C%89%E5%8F%AF%E8%83%BD%E7%9A%84%E8%B7%AF%E5%BE%84.go)
+- [207-课程表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/207-%E8%AF%BE%E7%A8%8B%E8%A1%A8/207-%E8%AF%BE%E7%A8%8B%E8%A1%A8.go)
+- [785-判断二分图](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/785-%E5%88%A4%E6%96%AD%E4%BA%8C%E5%88%86%E5%9B%BE/785-%E5%88%A4%E6%96%AD%E4%BA%8C%E5%88%86%E5%9B%BE.go)
+- [886-可能的二分法](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/886-%E5%8F%AF%E8%83%BD%E7%9A%84%E4%BA%8C%E5%88%86%E6%B3%95/886-%E5%8F%AF%E8%83%BD%E7%9A%84%E4%BA%8C%E5%88%86%E6%B3%95.go)
+
+
+#### 并查集
