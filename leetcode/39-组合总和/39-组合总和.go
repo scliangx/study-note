@@ -24,6 +24,7 @@ func backtrack(nums []int, start, sumVal, target int, track []int, res *[][]int)
 	for i := start; i < len(nums); i++ {
 		sumVal += nums[i]
 		track = append(track, nums[i])
+		// 可以有重复值，start从当前值i开始即可
 		backtrack(nums, i, sumVal, target, track, res)
 		track = track[:len(track)-1]
 		sumVal -= nums[i]
