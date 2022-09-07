@@ -102,4 +102,13 @@
 - [886-可能的二分法](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/886-%E5%8F%AF%E8%83%BD%E7%9A%84%E4%BA%8C%E5%88%86%E6%B3%95/886-%E5%8F%AF%E8%83%BD%E7%9A%84%E4%BA%8C%E5%88%86%E6%B3%95.go)
 
 
-#### 并查集
+#### 回溯算法
+- [46-全排列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/46-%E5%85%A8%E6%8E%92%E5%88%97/46-%E5%85%A8%E6%8E%92%E5%88%97.go)
+- [51-N 皇后](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/51-N%20%E7%9A%87%E5%90%8E/51-N%20%E7%9A%87%E5%90%8E.go)
+- [698-划分为k个相等的子集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/698-%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86/698-%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.go)
+- [77-组合](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/77-%E7%BB%84%E5%90%88/77-%E7%BB%84%E5%90%88.go)
+- [78-子集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/78-%E5%AD%90%E9%9B%86/78-%E5%AD%90%E9%9B%86.go)
+- [90-子集 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/90-%E5%AD%90%E9%9B%86%20II/90-%E5%AD%90%E9%9B%86%20II.go)
+- [40-组合总和 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/40-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20II/40-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20II.go)
+- [47-全排列 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/47-%E5%85%A8%E6%8E%92%E5%88%97%20II/47-%E5%85%A8%E6%8E%92%E5%88%97%20II.go)
+- [39-组合总和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/39-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C/39-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.go)
