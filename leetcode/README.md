@@ -112,3 +112,16 @@
 - [40-组合总和 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/40-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20II/40-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20II.go)
 - [47-全排列 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/47-%E5%85%A8%E6%8E%92%E5%88%97%20II/47-%E5%85%A8%E6%8E%92%E5%88%97%20II.go)
 - [39-组合总和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/39-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C/39-%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.go)
+
+### DFS 岛屿问题
+- [200-岛屿数量](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/200-%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/200-%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F.go)
+-[1254-统计封闭岛屿的数目](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1254-%E7%BB%9F%E8%AE%A1%E5%B0%81%E9%97%AD%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%95%B0%E7%9B%AE/1254-%E7%BB%9F%E8%AE%A1%E5%B0%81%E9%97%AD%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%95%B0%E7%9B%AE.go)
+- [1020-飞地的数量](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1020-%E9%A3%9E%E5%9C%B0%E7%9A%84%E6%95%B0%E9%87%8F/1020-%E9%A3%9E%E5%9C%B0%E7%9A%84%E6%95%B0%E9%87%8F.go)
+-[695-岛屿的最大面积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/695-%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF/695-%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.go)
+-[1905-统计子岛屿](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1905-%E7%BB%9F%E8%AE%A1%E5%AD%90%E5%B2%9B%E5%B1%BF/1905-%E7%BB%9F%E8%AE%A1%E5%AD%90%E5%B2%9B%E5%B1%BF.go)
+-[694-不同岛屿的数量](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/694-%E4%B8%8D%E5%90%8C%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%95%B0%E9%87%8F/694-%E4%B8%8D%E5%90%8C%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%95%B0%E9%87%8F.go)
+
+#### BFS
+- [111-二叉树的最小深度](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/111-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6/111-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.go)
+-[752-打开转盘锁](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81.go)
+- [773-滑动谜题](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/773-%E6%BB%91%E5%8A%A8%E8%B0%9C%E9%A2%98/773-%E6%BB%91%E5%8A%A8%E8%B0%9C%E9%A2%98.go)
