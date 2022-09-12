@@ -129,3 +129,12 @@
 #### 动态规划
 - [剑指 Offer 10- I-斐波那契数列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2010-%20I-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/%E5%89%91%E6%8C%87%20Offer%2010-%20I-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%2Cgo)
 - [322-零钱兑换](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.go)
+- [931-下降路径最小和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/931-%E4%B8%8B%E9%99%8D%E8%B7%AF%E5%BE%84%E6%9C%80%E5%B0%8F%E5%92%8C/931-%E4%B8%8B%E9%99%8D%E8%B7%AF%E5%BE%84%E6%9C%80%E5%B0%8F%E5%92%8C.go)
+- [300-最长递增子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.go
+- [354-俄罗斯套娃信封问题](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/354-%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%97%E5%A8%83%E4%BF%A1%E5%B0%81%E9%97%AE%E9%A2%98/354-%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%97%E5%A8%83%E4%BF%A1%E5%B0%81%E9%97%AE%E9%A2%98.go)
+- [53-最大子数组和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.go)
+- [72-编辑距离](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/72-%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/72-%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.go)
+- [1143-最长公共子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1143-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/1143-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97.go)
+- [416-分割等和子集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.go)
+- [64-最小路径和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C.go)
+- [174-地下城游戏](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/174-%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F/174-%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F.go)
