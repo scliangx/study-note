@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
-@File    :   factory.py
+@File    :   abstract_factory.py
 @Time    :   2022/09/12 21:59:33
 @Author  :   scliang 
 @Desc    :   抽象工厂模式
