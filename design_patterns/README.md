@@ -98,6 +98,6 @@
 - [备忘录模式]()
 - [观察者模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/observer_pattern.py)
 - [状态模式]()
-- [策略模式]()
+- [策略模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/strategy.py)
 - [访问者模式]()
-- [模板方法模式]()
+- [模板方法模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/template_method.py)
