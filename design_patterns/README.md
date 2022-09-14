@@ -1,5 +1,44 @@
 ### 常用的设计模式学习记录
-
+```text
+├─代理模式
+│      proxy.py
+│      test.txt
+│
+├─单例模式
+│      singleton.py
+│
+├─外观模式
+│      facade.py
+│
+├─工厂模式
+│      abstract_factory.py
+│      factory.py
+│      factory_method.py
+│
+├─建造者模式
+│      builder.py
+│
+├─桥模式
+│      bridge.py
+│
+├─模板方法模式
+│      template_method.py
+│
+├─策略模式
+│      strategy.py
+│
+├─组合模式
+│      combination.py
+│
+├─观察者模式
+│      observer_pattern.py
+│
+├─责任链模式
+│      chain_responsibility.py
+│
+└─适配器模式
+        adapter.py
+```
 
 #### 常见概念
 1. 设计模式
