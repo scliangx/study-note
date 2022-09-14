@@ -14,7 +14,7 @@ func shipWithinDays(weights []int, days int) int {
 	}
 	for left < right {
 		mid := left + (right-left)/2
-		if f(weights, mid) < days {
+		if f(weights, mid) <= days {
 			right = mid
 		} else {
 			left = mid + 1
