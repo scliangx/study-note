@@ -1,8 +1,18 @@
 ### 学习刷题笔记
 
-#### - leetcode 
-
 #### - cache
+```text
+│  cache.md
+│
+└─redis
+        1. redis 的事务机制.md
+        2. redis 的主从复制.md
+        3. redis 哨兵模式.md
+        4. redis 的集群搭建以及槽.md   
+        redis主从.png
+        哨兵模式.png
+        集群数据分片.png
+```
 
 #### - cloud native
 
@@ -11,12 +21,132 @@
 #### - network
 
 #### - databases
+```text
+│  README.md
+│
+├─mysql
+│  │  面试题.md
+│  │
+│  ├─1. mysql 中的存储引擎
+│  │  │  1.1 mysql 的系统结构.md
+│  │  │  1.2 mysql 的存储引擎.md
+│  │  │
+│  │  └─image
+│  │          innodb.png
+│  │          mysql.png
+│  │
+│  ├─2. mysql 中的索引
+│  │  │  2.1 mysql 中的索引.md
+│  │  │  2.2 mysql 中的索引结构.md
+│  │  │  2.3 sql 分析工具.md
+│  │  │  2.4 索引使用原则.md
+│  │  │
+│  │  └─image
+│  │          b+tree索引结构.png
+│  │          B-Tree结构.png
+│  │          Hash索引原理图.png
+│  │          二叉树结构.png
+│  │          慢查询.png
+│  │          标准b+tree结构.png
+│  │          索引分类.png
+│  │          索引分类原理.png
+│  │          红黑树结构.png
+│  │
+│  ├─3. mysql 中SQL优化
+│  │      3.1 sql 优化.md
+│  │
+│  ├─4. mysql 中的视图 存储过程 触发器
+│  │      4.1 mysql 中的视图.md
+│  │      4.2 mysql 中的存储过程.md
+│  │      4.3 mysql 中触发器.md
+│  │
+│  ├─5. mysql 中的锁
+│  │      5.1 mysql 锁的基本概念.md
+│  │      5.2 mysql 中的表锁.md
+│  │      5.3 mysql 中的行锁.md
+│  │
+│  ├─6. mysql 中的事务
+│  │  │  6.1 mysql 中InnoDB的架构.md
+│  │  │  6.2 mysql 中的事务.md
+│  │  │  6.3 mysql 中事务的MVCC.md
+│  │  │
+│  │  └─image
+│  │          innodb存储结构.png
+│  │          innodb架构.png
+│  │          mvcc 实现原理.png
+│  │          read log.png
+│  │          read view.png
+│  │          undo log版本链.png
+│  │          undo log版本链1.png
+│  │          事务的四个特性.png
+│  │          后台线程结构.png
+│  │
+│  └─7. mysql 集群
+│      │  7.1 mysql 中的日志.md
+│      │  7.2 mysql 中的主从复制.md
+│      │  7.3 mysql 中的分库分表.md
+│      │  7.4 mysql 中的读写分离.md
+│      │
+│      └─image
+│              mycat.png
+│              主从复制示意图.png
+│              分库分表示意图.png
+│              分库分表维度介绍.png
+│              垂直拆分.png
+│              水平拆分.png
+│
+└─postgresql
+        .gitkeep
+```
 
 #### - design patterns
+```text
+│  interface.py
+│  README.md
+│
+├─代理模式
+│      proxy.py
+│      test.txt
+│
+├─单例模式
+│      singleton.py
+│
+├─外观模式
+│      facade.py
+│
+├─工厂模式
+│      abstract_factory.py
+│      factory.py
+│      factory_method.py
+│
+├─建造者模式
+│      builder.py
+│
+├─桥模式
+│      bridge.py
+│
+├─模板方法模式
+│      template_method.py
+│
+├─策略模式
+│      strategy.py
+│
+├─组合模式
+│      combination.py
+│
+├─观察者模式
+│      observer_pattern.py
+│
+├─责任链模式
+│      chain_responsibility.py
+│
+└─适配器模式
+        adapter.py
+```
 
 #### - programming language
 
-**详细内容目录结构**
+#### - leetcode 
 
 ```text   
 ├─cache
