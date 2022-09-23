@@ -42,6 +42,8 @@
 -[852-山脉数组的峰顶索引](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/852-%E5%B1%B1%E8%84%89%E6%95%B0%E7%BB%84%E7%9A%84%E5%B3%B0%E9%A1%B6%E7%B4%A2%E5%BC%95/852-%E5%B1%B1%E8%84%89%E6%95%B0%E7%BB%84%E7%9A%84%E5%B3%B0%E9%A1%B6%E7%B4%A2%E5%BC%95.go)
 -[剑指 Offer 53 - I. 在排序数组中查找数字 I](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2053%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97%20I/%E5%89%91%E6%8C%87%20Offer%2053%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97%20I.go)
 - [74-搜索二维矩阵](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/74-%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5/74-%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5.go)
+- [35-搜索插入位置](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.go)
+
 
 #### ⽥忌赛⻢背后的算法决策
 - [870-优势洗牌](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/870-%E4%BC%98%E5%8A%BF%E6%B4%97%E7%89%8C/870-%E4%BC%98%E5%8A%BF%E6%B4%97%E7%89%8C.go)
