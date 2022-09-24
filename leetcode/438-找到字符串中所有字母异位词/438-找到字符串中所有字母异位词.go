@@ -9,24 +9,31 @@ func findAnagrams(s string, p string) []int {
 	for i := range p {
 		need[p[i]]++
 	}
-	left, valid := -1, 0
-	for right := 0; right < len(s); right++ {
+	left, right, valid := 0, 0, 0
+	for right < len(s) {
 		c := s[right]
-		window[c]++
-		if window[c] == need[c] {
-			valid++
+		right++
+		if need[c] > 0 {
+			window[c]++
+			// 有一个字符满足要求，则valid增加1
+			if window[c] == need[c] {
+				valid++
+			}
 		}
+		// left滑动
 		for right-left >= len(p) {
-			// 合法添加答案即可
+			// 所有都满足要求之后进行添加left到res
 			if valid == len(need) {
-				res = append(res, left+1)
+				res = append(res, left)
 			}
-			left++
 			d := s[left]
-			if window[d] == need[d] {
-				valid--
+			left++
+			if need[d] > 0 {
+				if window[d] == need[d] {
+					valid--
+				}
+				window[d]--
 			}
-			window[d]--
 		}
 	}
 	return res
