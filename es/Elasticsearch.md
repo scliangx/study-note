@@ -223,7 +223,7 @@ CONTAINER ID   IMAGE                                   COMMAND                  
 **假设为公共前缀为 a 的 Term 集合，内部部分 Term 的又包含了相同前缀 ab，这时这部分 Term 就会处理为一个嵌套的 Block**
 ```text
 termA: {a,$termB(prefix=ab),ac,ar}
-termB: {abc,abd.aba...}
+termB: {abc,abd,aba...}
 
 -- termA 为公共前缀a的term集合，其中一个term又包含了前缀为ab的term的集合，这个term集合处理为一个嵌套block
 ```
