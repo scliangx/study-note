@@ -18,8 +18,7 @@ ES | 关系型数据库
 | DSL查询 | SQL查询 |
 
 **概念介绍**
-> ES是一个分布式系统,基于Lucene的全文索引框架
-> ES集群由一个或多个node组成,一个node即为一个ES服务进程.一个index由多个分片(shard)组成,shard分散在各个node上面,每个shard都采用Lucene来创建倒排索引,维护各自的索引数据
+> ES是一个分布式系统,基于Lucene的全文索引框架,ES集群由一个或多个node组成,一个node即为一个ES服务进程.一个index由多个分片(shard)组成,shard分散在各个node上面,每个shard都采用Lucene来创建倒排索引,维护各自的索引数据
 ```text
 Segment：段，Lucence中存储是按段来进行存储，每个段相当于一个数据集。
 
