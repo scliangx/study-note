@@ -170,6 +170,33 @@ db.collection.update(
 # upsert : 可选，这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。
 # multi : 可选，mongodb 默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。
 # writeConcern :可选，抛出异常的级别。
+
+db.mycol.insertMany([{
+    "name":"c++",
+    "age":20
+},{
+    "name":"python",
+    "age":25
+},{
+    "name":"c",
+    "age":90
+},{
+    "name":"java",
+    "age":35
+}]
+)
+
+
+db.mycol.update({"name":"python"},{$set:{"name":"python3"}})
+
+db.mycol.find()
+[
+  {"_id": {"$oid": "63305db8e6aef633eca11e8f"},"age": 14,"name": "golang"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e90"},"age": 20,"name": "c++"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e91"},"age": 25,"name": "python3"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e92"},"age": 90,"name": "c"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e93"},"age": 35,"name": "java"}
+]
 ```
 
 **删除文档**
@@ -184,4 +211,60 @@ db.collection.remove(
 # query :（可选）删除的文档的条件。
 # justOne : （可选）如果设为 true 或 1，则只删除一个文档，如果不设置该参数，或使用默认值 false，则删除所有匹配条件的文档。
 # writeConcern :（可选）抛出异常的级别。
+
+db.mycol.remove({"name":"java"})
+
+db.mycol.find()
+[
+  {"_id": {"$oid": "63305db8e6aef633eca11e8f"},"age": 14,"name": "golang"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e90"},"age": 20,"name": "c++"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e91"},"age": 25,"name": "python3"},
+  {"_id": {"$oid": "63305e3be6aef633eca11e92"},"age": 90,"name": "c"}
+]
+```
+
+#### 查询文档
+```text
+db.collection.find(query, projection)
+
+query ：可选，使用查询操作符指定查询条件
+projection ：可选，使用投影操作符指定返回的键。查询时返回文档中所有键值， 只需省略该参数即可（默认省略）
+```
+MongoDB 与 RDBMS Where 语句比较
+
+| 操作 | 格式 | 范例 | RDBMS中的类似语句 |
+| :---: | :---: | :---: | :---: |
+| 等于 | {key:value} | db.col.find({"name":"tom1"}).pretty() | where name='tom1' |
+| 小于 | {key:{$lt:value}} | db.col.find({"likes":{$lt:50}}).pretty() | where likes < 50 |
+| 小于或等于 | {key>:{$lte:value}} | db.col.find({"likes":{$lte:50}}).pretty() | where likes <= 50 |
+| 大于 | {key:{$gt:value}} | db.col.find({"likes":{$gt:50}}).pretty() | where likes > 50 |
+| 大于或等于 | {key:{$gte:value}} | db.col.find({"likes":{$gte:50}}).pretty() | where likes >= 50 |
+| 不等于 | {key:{$ne:value}} | db.col.find({"likes":{$ne:50}}).pretty() | where likes != 50 |
+
+**and/or**
+```shell
+# or
+db.mycol.find({
+    $or: [
+        {"name":"python3"},
+        {"age": 90}
+    ]
+})
+
+# [
+#   {"_id": {"$oid": "63305e3be6aef633eca11e91"},"age": 25,"name": "python3"},
+#   {"_id": {"$oid": "63305e3be6aef633eca11e92"},"age": 90,"name": "c"}
+# ]
+
+# and + or
+# age > 30 and name == 'python3' or age=90
+db.mycol.find(
+    {
+        "age": {$gt: 30},
+        $or:[
+            {"name":"python3"},
+            {"age": 90}
+        ]}
+)
+# [{"_id": {"$oid": "63305e3be6aef633eca11e92"},"age": 90,"name": "c"}]
 ```
