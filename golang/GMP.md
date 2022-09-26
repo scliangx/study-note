@@ -93,6 +93,7 @@ debug.SetMaxThreads($thredNumber)
 #### 5.2 协程执行完毕（使用每个M所创建的G0进行goroutine切换）
 
 ![image](./image/gmp%E5%9C%BA%E6%99%AF2.png)
+
 > 当G1执行完毕，M上运行的goroutine会先切换为G0，有G0统一负责调度协程切换(使用schedule进行调度),从本地队列P中获取goroutine,并开始执行协程(execute).从而实现了对os thread M1的重复使用
 
 #### 5.3 创建G时唤醒自旋线程

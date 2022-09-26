@@ -113,11 +113,9 @@
 
 ![image](./image/%E6%8F%92%E5%85%A5%E5%86%99%E5%B1%8F%E9%9A%9C4.png)
 
-
 ![image](./image/%E6%8F%92%E5%85%A5%E5%86%99%E5%B1%8F%E9%9A%9C5.png)
 
 ![image](./image/%E6%8F%92%E5%85%A5%E5%86%99%E5%B1%8F%E9%9A%9C6.png)
-
 
 ![image](./image/%E6%8F%92%E5%85%A5%E5%86%99%E5%B1%8F%E9%9A%9C7.png)
 
@@ -226,7 +224,6 @@ new 栈对象9；
 ```
 
 ![image](./image/%E6%B7%B7%E5%90%88%E5%86%99%E5%B1%8F%E9%9A%9C11.png)
-
 
 ![image](./image/%E6%B7%B7%E5%90%88%E5%86%99%E5%B1%8F%E9%9A%9C12.png)
 
