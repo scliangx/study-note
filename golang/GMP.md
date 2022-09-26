@@ -3,6 +3,7 @@
 [参考地鼠文档](https://www.topgoer.cn/docs/golangxiuyang/golangxiuyang-1cmeduvk27bo0)
 
 ### 1. 旧版本的调度器
+
 ![image](./image/gm.png)
 
 ![image](./image/old%E8%B0%83%E5%BA%A6%E5%99%A8.png)
@@ -18,12 +19,14 @@
 
 ### 2. GMP调度模型
 > 新调度器中，出列M(thread)和G(goroutine)，又引进了P(Processor)
+
 ![image](./image/gmp.png)
 
 > Processor，它包含了运行goroutine的资源，如果线程想运行goroutine，必须先获取P，P中还包含了可运行的G队列
 
 #### 2.1 GMP
 > 在Go中，线程是运行goroutine的实体，调度器的功能是把可运行的goroutine分配到工作线程上
+
 ![image](./image/GMP-%E8%B0%83%E5%BA%A6.png)
 
 - 全局队列（Global Queue）：存放等待运行的G。
@@ -61,6 +64,7 @@ debug.SetMaxThreads($thredNumber)
 > 2. M何时创建：没有足够的M来关联P并运行其中的可运行的G。比如所有的M此时都阻塞住了，而P中还有很多就绪任务，就会去寻找空闲的M，而没有空闲的，就会去创建新的M
 
 ### 3. go func() 执行流程
+
 ![image](./image/go-func%E8%B0%83%E5%BA%A6%E5%91%A8%E6%9C%9F.png)
 
 **执行流程**
@@ -72,6 +76,7 @@ debug.SetMaxThreads($thredNumber)
 - 6. 当M系统调用结束时候，这个G会尝试获取一个空闲的P执行，并放入到这个P的本地队列。如果获取不到P，那么这个线程M变成休眠状态， 加入到空闲线程中，然后这个G会被放入全局队列中
 
 ### 4. 调度器的生命周期
+
 ![imgae](./image/go%E8%B0%83%E5%BA%A6%E5%99%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png)
 
 > **M0:** M0是启动程序后的编号为0的主线程，这个M对应的实例会在全局变量runtime.m0中，不需要在heap上分配，M0负责执行初始化操作和启动第一个G， 在之后M0就和其他的M一样了。
@@ -80,31 +85,39 @@ debug.SetMaxThreads($thredNumber)
 
 ### 5. Go调度器的不同场景
 #### 5.1 局部性（协程创建的子协程添加到当前绑定的P-M的本地队列）
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF1.png)
 
 > 当程序运行之后，P和M1进行绑定，P都是运行在绑定的M上；此时P的本地队列中有G1，正在进行运行，当G1运行中需要另起一个goroutine即G2时，使用go func() 创建，G2会优先添加到当前P-M所绑定的P本地队列。好处：子鞋程可能会共享资源，减少了资源复制以及上下文切换的CPU开销；即创建的些称会优先添加到与至向关的Processer中
 
 #### 5.2 协程执行完毕（使用每个M所创建的G0进行goroutine切换）
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF2.png)
 > 当G1执行完毕，M上运行的goroutine会先切换为G0，有G0统一负责调度协程切换(使用schedule进行调度),从本地队列P中获取goroutine,并开始执行协程(execute).从而实现了对os thread M1的重复使用
 
 #### 5.3 创建G时唤醒自旋线程
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF3.png)
+
 > 在创建协程时，就会去唤醒os Thread Queue中的M，尝试去进行与空闲的Processer进行绑定，进行P-M组合。如果没有M，则不进行操作；如果全局队列中有M或者存在多个M，则取出M，队列中剩余的M前移，如果没有空闲的P，则返回队列中；当有空闲的P时，则进行绑定，绑定之后，就会产生G0调度协程进行初始化与调度；如果新绑定的P本地队列中没有goroutine，则线程一直处于等待状态，尝试work stealing 或从全局中获取待执行的任务；在此期间，G0在一直寻找任务，此时的线程为自旋线程
 
 #### 5.4 GMP内部的负载均衡（被唤醒的线程从全局队列中获取G）
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF4.png)
+
 > 当P-M组合完成后，G0将会不断的去寻找执行的G，会优先从GQ(Global Queue)中获取批量的G，如果GQ(Global Queue)中存在待执行的goroutine，则会采用负载均衡的算法进行计算需要取出的G的数量
 > **n = min(len(GQ)/GOMAXPROCS + 1, len(GQ)/2)**
 >
 >其中GQ为全局队列中保存的G的数量， GOMAXPROCS为设置的P的最大使用核数，一般默认为当前最大核数，然后计算出二者最小值为从全局队列中获取的数量，将其放入新P-M组合中P的本地队列中，然后由G0进行调度执行,一般从全局队列中取出的G至少一个
 
 #### 5.5 P本地队列和GQ皆为空时，从别地P中偷取G（M2从M1的本地队列中偷取goroutine）
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF5.png)
 
 > 当M2中的处理器P2将本地队列中的任务执行完毕后，并且此时全局队列也不存在G；此时M2将会执行work stealing 操作，从其他存在G的processer的本地队列中偷取一半的G，将其放在本地队列中；如上图所示，M2将从P1的尾部偷取一半的G（向下取整），即G8将被偷取存入到P2的本地队列中，然后又M2的G0进行调度执行
 
 #### 5.6 进程中没有可运行的G，自旋线程的最大数目(即GOMAXPROCS)
+
 ![image](./image/gmp%E5%9C%BA%E6%99%AF6.png)
 
 >  当进程中所有的线程M所绑定的P处理器本地队列中没有G，同时全局队列中无待执行的G时，此时进程中将会存在GOMAXPROCS数量个线程处于自旋状态；其他产生的线程将会保存在全局线程队列中处于休眠状态，等待下次被调度唤醒进行任务绑定

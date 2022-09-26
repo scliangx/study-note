@@ -1,6 +1,6 @@
 # Context
 
-[Go语言设计与实现](https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/)
+[参考Go语言设计与实现](https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/)
 
 > 上下文 context.Context Go 语言中用来设置截止日期、同步信号，传递请求相关值的结构体
 > context.Context 是 Go 语言在 1.7 版本中引入标准库的接口
