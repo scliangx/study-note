@@ -25,6 +25,14 @@
 
 #### 快慢指针(数组)
 - [27-移除元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
+- [26-删除有序数组中的重复项](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9.go)
+- [27-移出元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
+- [283-移动零](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/283-%E7%A7%BB%E5%8A%A8%E9%9B%B6/283-%E7%A7%BB%E5%8A%A8%E9%9B%B6.go)
+- [80-删除有序数组中的重复项 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/80-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9%20II/80-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9%20II.go)
+- [剑指 Offer 57. 和为s的两个数字](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.go)
+- [88-合并两个有序数组](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/88-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/88-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.go)
+- [977-有序数组的平方](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/977-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9/977-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.go)
+- [剑指 Offer 04. 二维数组中的查找](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE.go)
 
 
 #### 滑动窗口
@@ -35,6 +43,8 @@
 - [剑指 Offer 48. 最长不含重复字符的子字符串](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.go)
 - [剑指 Offer II 014. 字符串中的变位词](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%20II%20014.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8F%98%E4%BD%8D%E8%AF%8D/%E5%89%91%E6%8C%87%20Offer%20II%20014.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8F%98%E4%BD%8D%E8%AF%8D.go)
 - [剑指 Offer II 015. 字符串中的所有变位词](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%20II%20015.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%98%E4%BD%8D%E8%AF%8D/%E5%89%91%E6%8C%87%20Offer%20II%20015.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%98%E4%BD%8D%E8%AF%8D.go)
+- [剑指 Offer II 016. 不含重复字符的最长子字符串](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%20II%20016.%20%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%89%91%E6%8C%87%20Offer%20II%20016.%20%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.go)
+- [剑指 Offer II 017. 含有所有字符的最短字符串](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%20II%20017.%20%E5%90%AB%E6%9C%89%E6%89%80%E6%9C%89%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E7%9F%AD%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%89%91%E6%8C%87%20Offer%20II%20017.%20%E5%90%AB%E6%9C%89%E6%89%80%E6%9C%89%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E7%9F%AD%E5%AD%97%E7%AC%A6%E4%B8%B2.go)
 
 
 #### 二分查找
@@ -141,7 +151,7 @@
 - [剑指 Offer 10- I-斐波那契数列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2010-%20I-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/%E5%89%91%E6%8C%87%20Offer%2010-%20I-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%2Cgo)
 - [322-零钱兑换](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2/322-%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.go)
 - [931-下降路径最小和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/931-%E4%B8%8B%E9%99%8D%E8%B7%AF%E5%BE%84%E6%9C%80%E5%B0%8F%E5%92%8C/931-%E4%B8%8B%E9%99%8D%E8%B7%AF%E5%BE%84%E6%9C%80%E5%B0%8F%E5%92%8C.go)
-- [300-最长递增子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.go
+- [300-最长递增子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97/300-%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.go)
 - [354-俄罗斯套娃信封问题](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/354-%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%97%E5%A8%83%E4%BF%A1%E5%B0%81%E9%97%AE%E9%A2%98/354-%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%97%E5%A8%83%E4%BF%A1%E5%B0%81%E9%97%AE%E9%A2%98.go)
 - [53-最大子数组和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.go)
 - [72-编辑距离](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/72-%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB/72-%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.go)
