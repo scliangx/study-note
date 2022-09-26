@@ -46,3 +46,34 @@ func main() {
 2) new 分配返回的是指针，即类型 *Type。make 返回引用，即 Type；
 3) new 分配的空间被清零。make 分配空间后，会进行初始化
 ```
+
+### 2. return 和 defer 的执行顺序？
+> 多个defer出现的时候，它是一个“栈”的关系，也就是先进后出。一个函数中，写在前面的defer会比写在后面的defer调用的晚
+> return之后的语句先执行，defer后的语句后执行
+
+```go
+func main() {
+	run()
+}
+
+func run() string {
+	defer deferFunc()
+	return returnFunc()
+}
+
+func deferFunc() string {
+	fmt.Println("defer...")
+	return "defer"
+}
+
+func returnFunc() string {
+	fmt.Println("return...")
+	return "return"
+}
+/*
+out: 
+return...
+defer...
+*/
+```
+
