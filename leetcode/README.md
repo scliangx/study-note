@@ -21,6 +21,8 @@
 - [142-环形链表II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.go)
 - [83-删除排序链表中的重复元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.go)
 - [392-判断子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.go)
+- [264-丑数 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/264-%E4%B8%91%E6%95%B0%20II/264-%E4%B8%91%E6%95%B0%20II.go)
+- [234-回文链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.go)
 
 
 #### 双指针(数组)
