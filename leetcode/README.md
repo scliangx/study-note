@@ -23,7 +23,7 @@
 - [392-判断子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.go)
 
 
-#### 快慢指针(数组)
+#### 双指针(数组)
 - [27-移除元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
 - [26-删除有序数组中的重复项](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9.go)
 - [27-移出元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
@@ -33,7 +33,13 @@
 - [88-合并两个有序数组](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/88-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/88-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.go)
 - [977-有序数组的平方](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/977-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9/977-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.go)
 - [剑指 Offer 04. 二维数组中的查找](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/%E5%89%91%E6%8C%87%20Offer%2004.%20%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE.go)
+- [11-盛最多水的容器](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/11-%E7%9B%9B%E6%9C%80%E5%A4%9A%E6%B0%B4%E7%9A%84%E5%AE%B9%E5%99%A8/11-%E7%9B%9B%E6%9C%80%E5%A4%9A%E6%B0%B4%E7%9A%84%E5%AE%B9%E5%99%A8.go)
+- [42-接雨水](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/42-%E6%8E%A5%E9%9B%A8%E6%B0%B4.go)
+- [151-反转字符串中的单词](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/151-%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D/151-%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D.go)
+- [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面]()
 
+#### 区间集合
+- [986-区间列表的交集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/986-%E5%8C%BA%E9%97%B4%E5%88%97%E8%A1%A8%E7%9A%84%E4%BA%A4%E9%9B%86/986-%E5%8C%BA%E9%97%B4%E5%88%97%E8%A1%A8%E7%9A%84%E4%BA%A4%E9%9B%86.go)
 
 #### 滑动窗口
 - [76-最小覆盖子串](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.go)
