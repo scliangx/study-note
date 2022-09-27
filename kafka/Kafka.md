@@ -6,11 +6,15 @@
 （replica），基于zookeeper协调的分布式消息系统，它的最大的特性就是可以实时的处理
 大量数据以满足各种需求场景：比如基于hadoop的批处理系统、低延迟的实时系统、
 Storm/Spark流式处理引擎，web/nginx日志、访问日志，消息服务等等，用scala语言编
-写，Linkedin于 2010 年贡献给了Apache基金会并成为顶级开源 项目。
+写，Linkedin于 2010 年贡献给了Apache基金会并成为顶级开源项目。
 
 >kafka是一个分布式的，分区的消息(官方称之为commit log)服务。它提供一个消息系统应该
 具备的功能，但是确有着独特的设计。可以这样来说，Kafka借鉴了JMS规范的思想，但是确
 并 `没有完全遵循JMS规范。`
+
+**kafka 架构流程图**
+
+![image](./image/kafka.png)
 
 
 | 名称 | 解释 |
@@ -24,6 +28,7 @@ Storm/Spark流式处理引擎，web/nginx日志、访问日志，消息服务等
 | Replica | 副本，本质就是一个只能追加写消息的提交日志。Kafka 副本机制的定义，同一个分区下的所有副本保存有相同的消息序列，这些副本分散保存在不同的 Broker 上，从而能够对抗部分 Broker 宕机带来的数据不可用 |
 | leader | 每个分区多个副本的主，也是处理生产者消费者消息的对象  |
 | follower | 每个分区多个副本的从，实时从leader中同步数据，leader出现故障时，某个follower会成为新的leader，担任leader的任务 |
+
 
 
 #### 2. 基于docker-compse启动kafak
@@ -129,7 +134,7 @@ docker-compose -f $docker-compose-file-name up -d
 # KAFKA_BROKER_ID=1                       kafka.borker.id=1                                   kafka在集群中的唯一标识
 # KAFKA_ZOOKEEPER_CONNECT                 zookeeper.connect=zookeeper:2181                    监听zookeeper的地址 
 # KAFKA_ADVERTISED_LISTENERS              advertised.listeners=PLAINTEXT://localhost:9092     kafka服务器的地址
-# KAFKA_DELETE_TOPIC_ENABLE                      delete.topic.enable                                 是否可以删除主题
+# KAFKA_DELETE_TOPIC_ENABLE               delete.topic.enable                                 是否可以删除主题
 
 # 3. 进入容器，启动kafka
 [root@iZ2ze58f53sxjm9z7mgn5xZ ~]# docker exec -it kafka bash
