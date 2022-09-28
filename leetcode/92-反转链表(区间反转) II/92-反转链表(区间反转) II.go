@@ -29,3 +29,40 @@ func reverseN(head *ListNode, n int) *ListNode {
 	head.Next = successor
 	return last
 }
+
+// ----------------------------------------
+func reverseLinkedList(head *ListNode) {
+	cur := head
+	var pre *ListNode
+	for cur != nil {
+		next := cur.Next
+		cur.Next = pre
+		pre = cur
+		cur = next
+	}
+}
+
+func reverseBetween1(head *ListNode, left, right int) *ListNode {
+	dummy := &ListNode{}
+	dummy.Next = head
+
+	pre := dummy
+	for i := 0; i < left-1; i++ {
+		pre = pre.Next
+	}
+	rightNode := pre
+	for i := left; i <= right; i++ {
+		rightNode = rightNode.Next
+	}
+
+	leftNode := pre.Next
+	curNode := rightNode.Next
+
+	pre.Next = nil
+	rightNode.Next = nil
+
+	reverseLinkedList(leftNode)
+	pre.Next = rightNode
+	leftNode.Next = curNode
+	return dummy.Next
+}
