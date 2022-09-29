@@ -1,6 +1,4 @@
-from turtle import st
-
-
+# 150-逆波兰表达式求值
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
