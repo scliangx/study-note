@@ -3,7 +3,7 @@
 #### 前缀和
 - [303-区域和检索-数组不可变](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/303-%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/303-%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98.go)
 - [304-二维区域和检索-矩阵不可变](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/304-%E4%BA%8C%E7%BB%B4%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E7%9F%A9%E9%98%B5%E4%B8%8D%E5%8F%AF%E5%8F%98/304-%E4%BA%8C%E7%BB%B4%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E7%9F%A9%E9%98%B5%E4%B8%8D%E5%8F%AF%E5%8F%98.go)
-- [1352-最后 K 个数的乘积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF.go1314. 矩阵区域和)
+- [1352-最后 K 个数的乘积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF.go)
 - [1314-矩阵区域和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1314-%E7%9F%A9%E9%98%B5%E5%8C%BA%E5%9F%9F%E5%92%8C/1314-%E7%9F%A9%E9%98%B5%E5%8C%BA%E5%9F%9F%E5%92%8C.go)
 - [238-除自身以外数组的乘积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/238-%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF/238-%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF.go)
 
