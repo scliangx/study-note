@@ -3,6 +3,9 @@
 #### 前缀和
 - [303-区域和检索-数组不可变](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/303-%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/303-%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98.go)
 - [304-二维区域和检索-矩阵不可变](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/304-%E4%BA%8C%E7%BB%B4%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E7%9F%A9%E9%98%B5%E4%B8%8D%E5%8F%AF%E5%8F%98/304-%E4%BA%8C%E7%BB%B4%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2-%E7%9F%A9%E9%98%B5%E4%B8%8D%E5%8F%AF%E5%8F%98.go)
+- [1352-最后 K 个数的乘积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF/1352-%E6%9C%80%E5%90%8E%20K%20%E4%B8%AA%E6%95%B0%E7%9A%84%E4%B9%98%E7%A7%AF.go1314. 矩阵区域和)
+- [1314-矩阵区域和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1314-%E7%9F%A9%E9%98%B5%E5%8C%BA%E5%9F%9F%E5%92%8C/1314-%E7%9F%A9%E9%98%B5%E5%8C%BA%E5%9F%9F%E5%92%8C.go)
+- [238-除自身以外数组的乘积](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/238-%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF/238-%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF.go)
 
 
 #### 差分数组
@@ -23,6 +26,9 @@
 - [392-判断子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.go)
 - [264-丑数 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/264-%E4%B8%91%E6%95%B0%20II/264-%E4%B8%91%E6%95%B0%20II.go)
 - [234-回文链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.go)
+- [2-两数相加](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0.go)
+- [剑指 Offer 18. 删除链表的节点]()
+
 
 
 #### 双指针(数组)
@@ -73,6 +79,7 @@
 #### 递归操作(链表)
 - [92-反转链表(区间反转) II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/92-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8(%E5%8C%BA%E9%97%B4%E5%8F%8D%E8%BD%AC)%20II/92-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8(%E5%8C%BA%E9%97%B4%E5%8F%8D%E8%BD%AC)%20II.go)
 - [206-链表反转-递归翻转](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/206-%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/206-%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC.go)
+- [25-K 个一组翻转链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/25-K%20%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8/25-K%20%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.go)
 
 
 #### 栈和队列
@@ -90,6 +97,12 @@
 ##### 单调队列
 - [239-滑动窗口最大值](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/239-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/239-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.go)
 
+##### 栈和队列
+- [225-用队列实现栈](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/225-%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/225-%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88.go)
+- [232-用栈实现队列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/232-%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.go)
+- [155-最小栈](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/155-%E6%9C%80%E5%B0%8F%E6%A0%88/155-%E6%9C%80%E5%B0%8F%E6%A0%88.go)
+- [150-逆波兰表达式求值](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/150-%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC/150-%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC.go)
+- [71-简化路径](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/71-%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84/71-%E7%AE%80%E5%8C%96%E8%B7%AF%E5%BE%84.go)
 
 #### 随机集合
 - [380-O(1) 时间插入、删除和获取随机元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/380-O(1)%20%E6%97%B6%E9%97%B4%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E5%85%83%E7%B4%A0/380-O(1)%20%E6%97%B6%E9%97%B4%E6%8F%92%E5%85%A5%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E5%85%83%E7%B4%A0.go)
