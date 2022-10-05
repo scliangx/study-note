@@ -127,6 +127,9 @@
 - [106-从中序与后序遍历序列构造二叉树](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/106-%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/106-%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.go)
 - [889-根据前序和后序遍历构造二叉树](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/889-%E6%A0%B9%E6%8D%AE%E5%89%8D%E5%BA%8F%E5%92%8C%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/889-%E6%A0%B9%E6%8D%AE%E5%89%8D%E5%BA%8F%E5%92%8C%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.go)
 - [297-二叉树的序列化与反序列化](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/297-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/297-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.go)
+- [965-单值二叉树](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/965-%E5%8D%95%E5%80%BC%E4%BA%8C%E5%8F%89%E6%A0%91/965-%E5%8D%95%E5%80%BC%E4%BA%8C%E5%8F%89%E6%A0%91.go)
+- [652-寻找重复的子树](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/652-%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E6%A0%91/652-%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E6%A0%91.go)
+
 
 #### 二叉搜索树
 - [230-二叉搜索树中第K小的元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/230-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%AC%ACK%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0/230-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%AC%ACK%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0.go)
