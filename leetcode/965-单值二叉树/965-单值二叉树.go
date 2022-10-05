@@ -16,11 +16,11 @@ func isUnivalTree(root *TreeNode) bool {
 	}
 	val := root.Val
 	isUnival := true
-	reverse(root, val, &isUnival)
+	traverse(root, val, &isUnival)
 	return isUnival
 }
 
-func reverse(root *TreeNode, val int, isUnival *bool) {
+func traverse(root *TreeNode, val int, isUnival *bool) {
 	if root == nil || !(*isUnival) {
 		return
 	}
@@ -28,6 +28,6 @@ func reverse(root *TreeNode, val int, isUnival *bool) {
 		*isUnival = false
 		return
 	}
-	reverse(root.Left, val, isUnival)
-	reverse(root.Right, val, isUnival)
+	traverse(root.Left, val, isUnival)
+	traverse(root.Right, val, isUnival)
 }
