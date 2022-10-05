@@ -1,7 +1,4 @@
 # Definition for a binary tree node.
-from operator import le
-from re import I
-
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
