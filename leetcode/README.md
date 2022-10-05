@@ -135,6 +135,7 @@
 - [700-二叉搜索树中的搜索](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2/700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2.go)
 - [450-删除二叉搜索树中的节点](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.go)
 - [95-不同的二叉搜索树II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/95-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91II/95-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91II.go)
+- [965-单值二叉树]()
 
 
 #### 图
@@ -180,3 +181,7 @@
 - [416-分割等和子集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/416-%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.go)
 - [64-最小路径和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/64-%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C.go)
 - [174-地下城游戏](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/174-%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F/174-%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F.go)
+
+
+### 缓存算法
+- [146-LRU 缓存](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/146-LRU%20%E7%BC%93%E5%AD%98/146-LRU%20%E7%BC%93%E5%AD%98.go)
