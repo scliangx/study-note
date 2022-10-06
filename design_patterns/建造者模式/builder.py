@@ -24,8 +24,6 @@
 
 # here put the import lib
 from abc import ABCMeta,abstractmethod
-from tkinter.messagebox import NO
-
 
 class Player():
     def __init__(self,face=None,body=None,leg=None) -> None:
