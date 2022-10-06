@@ -1,9 +1,4 @@
 # Definition for a binary tree node.
-from operator import le
-import re
-from tkinter.messagebox import NO
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
