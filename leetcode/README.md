@@ -23,7 +23,6 @@
 - [141-环形链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/141-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.go)
 - [142-环形链表II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.go)
 - [83-删除排序链表中的重复元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.go)
-- [392-判断子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.go)
 - [264-丑数 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/264-%E4%B8%91%E6%95%B0%20II/264-%E4%B8%91%E6%95%B0%20II.go)
 - [234-回文链表](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8/234-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.go)
 - [2-两数相加](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/2-%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0.go)
@@ -46,6 +45,7 @@
 - [42-接雨水](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/42-%E6%8E%A5%E9%9B%A8%E6%B0%B4.go)
 - [151-反转字符串中的单词](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/151-%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D/151-%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D.go)
 - [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2021.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/%E5%89%91%E6%8C%87%20Offer%2021.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2.go)
+- [392-判断子序列](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/392-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97.go)
 
 #### 区间集合
 - [986-区间列表的交集](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/986-%E5%8C%BA%E9%97%B4%E5%88%97%E8%A1%A8%E7%9A%84%E4%BA%A4%E9%9B%86/986-%E5%8C%BA%E9%97%B4%E5%88%97%E8%A1%A8%E7%9A%84%E4%BA%A4%E9%9B%86.go)
@@ -145,7 +145,7 @@
 - [450-删除二叉搜索树中的节点](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.go)
 - [95-不同的二叉搜索树II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/95-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91II/95-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91II.go)
 - [1373-二叉搜索子树的最大键值和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/1373-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E5%AD%90%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E9%94%AE%E5%80%BC%E5%92%8C/1373-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E5%AD%90%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E9%94%AE%E5%80%BC%E5%92%8C.go)
-
+- [783-二叉搜索树节点最小距离](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/783-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%8A%82%E7%82%B9%E6%9C%80%E5%B0%8F%E8%B7%9D%E7%A6%BB/783-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%8A%82%E7%82%B9%E6%9C%80%E5%B0%8F%E8%B7%9D%E7%A6%BB.go)
 
 
 #### 图
