@@ -175,7 +175,7 @@
 
 #### BFS
 - [111-二叉树的最小深度](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/111-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6/111-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.go)
--[752-打开转盘锁](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81.go)
+- [752-打开转盘锁](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81/752-%E6%89%93%E5%BC%80%E8%BD%AC%E7%9B%98%E9%94%81.go)
 - [773-滑动谜题](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/773-%E6%BB%91%E5%8A%A8%E8%B0%9C%E9%A2%98/773-%E6%BB%91%E5%8A%A8%E8%B0%9C%E9%A2%98.go)
 
 #### 动态规划
