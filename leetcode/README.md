@@ -34,7 +34,6 @@
 #### 双指针(数组)
 - [27-移除元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
 - [26-删除有序数组中的重复项](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9.go)
-- [27-移出元素](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.go)
 - [283-移动零](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/283-%E7%A7%BB%E5%8A%A8%E9%9B%B6/283-%E7%A7%BB%E5%8A%A8%E9%9B%B6.go)
 - [80-删除有序数组中的重复项 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/80-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9%20II/80-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9%20II.go)
 - [剑指 Offer 57. 和为s的两个数字](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.go)
