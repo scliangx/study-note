@@ -46,7 +46,6 @@ type hmap struct {
   B         uint8 
   noverflow uint16 
   hash0     uint32 
-​
   buckets    unsafe.Pointer
   oldbuckets unsafe.Pointer 
   nevacuate  uintptr        
@@ -164,7 +163,7 @@ Channel都有哪些特性？
 
 **非空 interface 数据结构**
 ```go
-// 非空的 interface 初始化的底层数据结构是 iface，稍后在汇编代码中能验证这一点
+// 非空的 interface 初始化的底层数据结构是 iface
 
 // tab 中存放的是类型、方法等信息
 // data 指针指向的 iface 绑定对象的原始数据的副本，其中tab 是 itab 类型的指针
