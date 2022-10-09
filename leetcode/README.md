@@ -194,3 +194,8 @@
 
 ### 缓存算法
 - [146-LRU 缓存](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/146-LRU%20%E7%BC%93%E5%AD%98/146-LRU%20%E7%BC%93%E5%AD%98.go)
+
+
+### Other
+- [55-跳跃游戏]()
+- [45-跳跃游戏 II]()
