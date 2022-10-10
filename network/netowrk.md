@@ -1,5 +1,7 @@
 # Http / Https
 
+[TCP数据传输详解](https://blog.csdn.net/xiayun1995/article/details/82380819)
+
 > HTTP 协议一般指 HTTP（超文本传输协议）。
 >
 > 超文本传输协议（英语：HyperText Transfer Protocol，缩写：HTTP）是一种用于分布式、协作式和超媒体信息系统的应用层协议，是因特网上应用最为广泛的一种网络传输协议，所有的 WWW 文件都必须遵守这个标准。
