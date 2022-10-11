@@ -18,7 +18,7 @@
 ```
 
 ### 2. GMP调度模型
-> 新调度器中，出列M(thread)和G(goroutine)，又引进了P(Processor)
+> 新调度器中，除了M(thread)和G(goroutine)，又引进了P(Processor)
 
 ![image](./image/gmp.png)
 
