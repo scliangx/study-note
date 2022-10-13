@@ -136,6 +136,7 @@
 - [107-二叉树的层序遍历 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/107-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86%20II/107-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86%20II.go)
 - [103-二叉树的锯齿形层序遍历](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/103-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%94%AF%E9%BD%BF%E5%BD%A2%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/103-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%94%AF%E9%BD%BF%E5%BD%A2%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.go)
 - [100-相同的树](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/100-%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91/100-%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.go)
+- [112-路径总和](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/112-%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C/112-%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.go)
 
 
 #### 二叉搜索树
@@ -199,5 +200,5 @@
 
 
 ### Other
-- [55-跳跃游戏]()
-- [45-跳跃游戏 II]()
+- [55-跳跃游戏](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/55-%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/55-%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F.go)
+- [45-跳跃游戏 II](https://github.com/scliang-strive/MyPractiseNotes/blob/master/leetcode/45-%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F%20II/45-%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F%20II.go)
