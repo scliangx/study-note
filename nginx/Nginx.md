@@ -97,8 +97,8 @@ Nginx 对 JavaScript 语言及第三方模块对 Lua 语言的支持，使得其
 ##### 1.3 Nginx 处理流程
 ![image](./image/nginx%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.png)
 
-> 1) 实际处理client请求的事worker进程
-> 2) master根据nginx.conf 配置觉得worker的数量
+> 1) 实际处理client请求的是worker进程
+> 2) master根据nginx.conf 配置worker的数量
 > 3) client请求时，worker之间相互竞争，获胜者和client连接并且处理请求
 > 4) 接受client请求后，如果需要代理转发给后端，则后端处理完毕后接收处理结果，在响应给client
 > 5) 接受并处理master发来的进程信号，例如启动、停止、 重启、重加载等等
@@ -167,7 +167,7 @@ nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)
 [root@iZ2ze58f53sxjm9z7mgn5xZ ~]# nginx -s stop
 nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)
 
-# 查看对应的进程文件nginx.pid文件不存，这是因为不是使用systemctl启动的，但是使用systemctl去管理导致的错误
+# 查看对应的进程文件nginx.pid文件不存在，这是因为不是使用systemctl启动的，但是使用systemctl去管理导致的错误
 [root@iZ2ze58f53sxjm9z7mgn5xZ ~]# cat /run/nginx.pid
 cat: /run/nginx.pid: No such file or directory
 
