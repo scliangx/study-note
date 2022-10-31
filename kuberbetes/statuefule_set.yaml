@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  nginx-svc
+  labels:
+    app: nginx-svc
+spec:
+  ports:
+  - name: web
+    port: 80
+  clusterIP: None
+  selector:
+    app: nginx
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  serviceName: "nginx-svc"
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+          name: web
+
