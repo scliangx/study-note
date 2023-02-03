@@ -172,29 +172,17 @@ kuboard    NodePort    10.102.159.239   <none>        80:32567/TCP             2
 #### 清除node结点环境
 ```sh
 #!/bin/sh
- kubeadm reset
- ​
- systemctl stop kubelet
- ​
- systemctl stop docker
- ​
- rm -rf /var/lib/cni/
- ​
- rm -rf /var/lib/kubelet/*
- ​
- rm -rf /etc/cni/
- ​
- ifconfig cni0 down
- ​
- ifconfig flannel.1 down
- ​
- ifconfig docker0 down
- ​
- ip link delete cni0
- ​
- ip link delete flannel.1
- ​
- systemctl start docker
- ​
- systemctl start kubelet
+kubeadm reset
+systemctl stop kubelet
+systemctl stop docker
+rm -rf /var/lib/cni/
+rm -rf /var/lib/kubelet/*
+rm -rf /etc/cni/
+ifconfig cni0 down
+ifconfig flannel.1 down
+ifconfig docker0 down
+ip link delete cni0
+ip link delete flannel.1
+systemctl start docker
+systemctl start kubelet
 ```
