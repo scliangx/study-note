@@ -33,6 +33,38 @@ type slice struct {
     len   int            // 切片中元素的数量
     cap   int            // array 数组的总容量
 }
+
+// 5. 切片扩容原理
+newcap := oldCap
+// 预设新的cap=2*oldCap
+doublecap := newcap + newcap
+if newLen > doublecap {
+    // 如果原来的容量大于二倍，直接扩容二倍
+    newcap = newLen
+} else {
+    // 小于256
+    const threshold = 256
+    if oldCap < threshold {
+	// 小于256 ，新的容量直接翻倍
+	newcap = doublecap
+    } else {
+	// Check 0 < newcap to detect overflow
+	// and prevent an infinite loop.
+	// 否则根据计算的扩容因子扩容
+	for 0 < newcap && newcap < newLen {
+	    // Transition from growing 2x for small slices
+	    // to growing 1.25x for large slices. This formula
+	    // gives a smooth-ish transition between the two.
+	    newcap += (newcap + 3*threshold) / 4
+	}
+	// Set newcap to the requested cap when
+	// the newcap calculation overflowed.
+	// 如果容量小于0，等于扩容之后的容量
+	if newcap <= 0 {
+	    newcap = newLen
+	}
+    }
+}
 ```
 
 #### 1.2 Map
