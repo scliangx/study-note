@@ -112,31 +112,31 @@
 - 多态
 
 #### 创建型模式
-- [工厂方法模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/factory_method.py)
-- [抽象工厂模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/abstract_factory.py)
-- [建造者模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/builder.py)
+- [工厂方法模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/factory_method.py)
+- [抽象工厂模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/abstract_factory.py)
+- [建造者模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/builder.py)
 - 原型模式
-- [单例模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/singleton.py)
+- [单例模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/singleton.py)
 
 
 #### 结构型模式
-- [适配器模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/adapter.py)
-- [桥模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E6%A1%A5%E6%A8%A1%E5%BC%8F/bridge.py)
-- [组合模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/combination.py)
+- [适配器模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/adapter.py)
+- [桥模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E6%A1%A5%E6%A8%A1%E5%BC%8F/bridge.py)
+- [组合模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F/combination.py)
 - 装饰模式
-- [外观模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/facade.py)
+- [外观模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/facade.py)
 - 享元模式
-- [代理模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/proxy.py)
+- [代理模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/proxy.py)
 
 #### 行为型模式
 - 解释器模式
-- [责任链模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F/chain_responsibility.py)
+- [责任链模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F/chain_responsibility.py)
 - 命令模式
 - 迭代器模式
 - 中介者模式
 - 备忘录模式
-- [观察者模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/observer_pattern.py)
+- [观察者模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/observer_pattern.py)
 - 状态模式
-- [策略模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/strategy.py)
+- [策略模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/strategy.py)
 - 访问者模式
-- [模板方法模式](https://github.com/scliang-strive/MyPractiseNotes/blob/master/design_patterns/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/template_method.py)
+- [模板方法模式](https://github.com/scliang-strive/study-note/blob/master/设计模式/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/template_method.py)
