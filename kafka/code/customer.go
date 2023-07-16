@@ -1,140 +1,59 @@
-package main
+package consumer
 
 import (
-	"context"
 	"fmt"
-	"github.com/Shopify/sarama"
-	"log"
-	"os"
-	"os/signal"
-	"sync"
-	"syscall"
+	"github.com/confluentinc/confluent-kafka-go/v2/kafka"
 )
 
-func NewKafka() *SaramaKafka {
-	return &SaramaKafka{
-		brokers:           BrokerServer,
-		topics:            Topics,
-		group:             Group,
-		channelBufferSize: 1000,
-		ready:             make(chan bool),
-		version:           "2.8.0",
-		assignor:          Assignor,
+func InitializationConsumer() {
+	config := &kafka.ConfigMap{
+		"bootstrap.servers":         "127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094",
+		"group.id":                  "first-group-id1",
+		"api.version.request":       "true",
+		"auto.offset.reset":         "earliest",
+		"heartbeat.interval.ms":     3000,
+		"session.timeout.ms":        30000,
+		"max.poll.interval.ms":      120000,
+		"fetch.max.bytes":           1024000,
+		"max.partition.fetch.bytes": 256000,
+		"enable.auto.commit":        "false",
 	}
-}
-
-// Connect 建立连接
-func (k *SaramaKafka) Connect() func() {
-	fmt.Println("kafka init...")
-
-	version, err := sarama.ParseKafkaVersion(k.version)
-	if err != nil {
-		_ = fmt.Errorf("error parsing Kafka version: %v", err)
-	}
-
-	config := sarama.NewConfig()
-	config.Version = version
-	// 分区分配策略
-	switch Assignor {
-	case "sticky":
-		config.Consumer.Group.Rebalance.Strategy = sarama.BalanceStrategySticky
-	case "roundrobin":
-		config.Consumer.Group.Rebalance.Strategy = sarama.BalanceStrategyRoundRobin
-	case "range":
-		config.Consumer.Group.Rebalance.Strategy = sarama.BalanceStrategyRange
-	default:
-		log.Panicf("Unrecognized consumer group partition assignor: %s", Assignor)
-	}
-	config.Consumer.Offsets.Initial = sarama.OffsetNewest
-	config.ChannelBufferSize = k.channelBufferSize // channel长度
-
-	// 创建client
-	newClient, err := sarama.NewClient(BrokerServer, config)
+	consumer, err := kafka.NewConsumer(config)
 	if err != nil {
 		panic(err)
 	}
-	// 获取所有的topic
-	topics, err := newClient.Topics()
+	defer consumer.Close()
+	/*
+		topic := "first"
+		partition := 0
+		offset := kafka.OffsetBeginning
+		// 手动分配分区和偏移量
+		err = consumer.Assign([]kafka.TopicPartition{
+			{
+				Topic:     &topic,
+				Partition: int32(partition),
+				Offset:    offset,
+				// 或者
+				//Offset:    kafka.OffsetInvalid,
+				//Timestamp: timestamp,
+			},
+		})
+	*/
+
+	topics := []string{"first"}
+	err = consumer.SubscribeTopics(topics, nil)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
-	fmt.Println("topics: ", topics)
-
-	// 根据client创建consumerGroup
-	client, err := sarama.NewConsumerGroupFromClient(k.group, newClient)
-	if err != nil {
-		log.Fatalf("Error creating consumer group client: %v", err)
-	}
-
-	ctx, cancel := context.WithCancel(context.Background())
-
-	wg := &sync.WaitGroup{}
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		for {
-			err := client.Consume(ctx, k.topics, k)
-			if err != nil {
-				// 当setup失败的时候，error会返回到这里
-				_ = fmt.Errorf("error from consumer: %s", err)
-				return
-			}
-			// check if context was cancelled, signaling that the consumer should stop
-			if ctx.Err() != nil {
-				fmt.Println(ctx.Err())
-				return
-			}
-			k.ready = make(chan bool)
+	for {
+		msg, err := consumer.ReadMessage(-1)
+		if err == nil {
+			fmt.Printf("Message on %s: %s\n", msg.TopicPartition, string(msg.Value))
+			consumer.CommitOffsets([]kafka.TopicPartition{msg.TopicPartition})
+		} else {
+			fmt.Printf("Consumer error: %v (%v)\n", err, msg)
 		}
-	}()
-	<-k.ready
-	// 保证在系统退出时，通道里面的消息被消费
-	return func() {
-		fmt.Println("kafka close")
-		cancel()
-		wg.Wait()
-		if err = client.Close(); err != nil {
-			_ = fmt.Errorf("Error closing client: %v \n", err)
-		}
+
 	}
 }
 
-// Setup is run at the beginning of a new session, before ConsumeClaim
-func (k *SaramaKafka) Setup(session sarama.ConsumerGroupSession) error {
-	fmt.Println("setup")
-	//session.ResetOffset(k.topics, 0, 13, "")
-	fmt.Println(session.Claims())
-	close(k.ready)
-	return nil
-}
-
-// Cleanup is run at the end of a session, once all ConsumeClaim goroutines have exited
-func (k *SaramaKafka) Cleanup(sarama.ConsumerGroupSession) error {
-	fmt.Println("cleanup")
-	return nil
-}
-
-// ConsumeClaim must start a consumer loop of ConsumerGroupClaim's Messages().
-func (k *SaramaKafka) ConsumeClaim(session sarama.ConsumerGroupSession, claim sarama.ConsumerGroupClaim) error {
-	// 具体消费消息
-	for message := range claim.Messages() {
-		fmt.Printf("[topic:%s] [partiton:%d] [offset:%d] [value:%s] [time:%v] \n",
-			message.Topic, message.Partition, message.Offset, string(message.Value), message.Timestamp)
-		// 更新位移
-		session.MarkMessage(message, "")
-	}
-	return nil
-}
-
-func main() {
-	k := NewKafka()
-	c := k.Connect()
-
-	sigterm := make(chan os.Signal, 1)
-	signal.Notify(sigterm, syscall.SIGINT, syscall.SIGTERM)
-	select {
-	case <-sigterm:
-		fmt.Println("terminating: via signal")
-	}
-	c()
-}
