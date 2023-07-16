@@ -1,96 +1,72 @@
-package main
+package produce
 
 import (
+	"encoding/json"
 	"fmt"
-	"log"
-	"math/rand"
-	"strconv"
-	"time"
-
-	"github.com/Shopify/sarama"
-	// "github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/confluentinc/confluent-kafka-go/v2/kafka"
 )
 
-func main() {
-	// InitProducer()
-	AsyncProducer()
+type KafkaRequest struct {
+	Username string
+	Age      int
+	Email    string
+	Des      string
 }
 
-// InitProducer 同步生产
-func InitProducer() {
-	config := sarama.NewConfig()
-	// request.timeout.ms
-	config.Producer.Timeout = time.Second * 5
-	// message.max.bytes
-	config.Producer.MaxMessageBytes = 1024 * 1024
-	// request.required.acks
-	config.Producer.RequiredAcks = sarama.WaitForAll
-	config.Producer.Return.Successes = true
-	config.Version = sarama.V2_8_1_0
-	config.Producer.Partitioner = sarama.NewHashPartitioner
-
-	if err := config.Validate(); err != nil {
-		panic(fmt.Errorf("invalid configuration, error: %v", err))
-	}
-
-	producer, err := sarama.NewSyncProducer(BrokerServer, config)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer func() {
-		if err := producer.Close(); err != nil {
-			log.Fatalln(err)
-		}
-	}()
-
-	for {
-		msg := &sarama.ProducerMessage{
-			Topic: Topics[0],
-			Value: sarama.StringEncoder("testing first topic..."),
-		}
-		partition, offset, err := producer.SendMessage(msg)
-		if err != nil {
-			log.Printf("send message failed: %s\n", err)
-		} else {
-			log.Printf("message sent to partition %d at offset %d\n", partition, offset)
-		}
-		time.Sleep(1 * time.Second)
+func buildRequest(des string) KafkaRequest {
+	return KafkaRequest{
+		Username: "golang001",
+		Age:      10,
+		Email:    "golang001@golang.com",
+		Des:      des,
 	}
 }
 
-// AsyncProducer 异步生产
-func AsyncProducer() {
-	config := sarama.NewConfig()
-	config.Producer.Return.Successes = true //必须有这个选项
-	config.Producer.Timeout = 5 * time.Second
-	p, err := sarama.NewAsyncProducer(BrokerServer, config)
-	defer p.Close()
-	if err != nil {
-		return
+func InitializationProducer() {
+	config := kafka.ConfigMap{
+		"bootstrap.servers":   "127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094",
+		"api.version.request": "true",
+		"message.max.bytes":   1000000,
+		"linger.ms":           10,
+		"retries":             30,
+		"retry.backoff.ms":    1000,
+		"acks":                "1",
+		"security.protocol":   "plaintext",
 	}
-	//保证通道不会被堵塞
-	go func(p sarama.AsyncProducer) {
-		errors := p.Errors()
-		success := p.Successes()
-		for {
-			select {
-			case err := <-errors:
-				if err != nil {
-					fmt.Errorf("[ERROR]: %s", err)
+
+	// 创建生产者
+	producer, err := kafka.NewProducer(&config)
+	if err != nil {
+		panic(err)
+	}
+	defer producer.Close()
+
+	go func() {
+		for e := range producer.Events() {
+			switch ev := e.(type) {
+			case *kafka.Message:
+				if ev.TopicPartition.Error != nil {
+					fmt.Printf("Delivery failed: %v\n", ev.TopicPartition)
+				} else {
+					fmt.Printf("Delivered message to %v Message: %v\n", ev.TopicPartition, string(ev.Value))
 				}
-			case <-success:
 			}
 		}
-	}(p)
+	}()
+	topic := "first"
 
-	for {
-		v := "async testing message...: " + strconv.Itoa(rand.New(rand.NewSource(time.Now().UnixNano())).Intn(10000))
-		msg := &sarama.ProducerMessage{
-			Topic: Topics[0],
-			Value: sarama.ByteEncoder(v),
+	for _, word := range []string{"Welcome", "to", "the", "Confluent", "Kafka", "Golang", "client"} {
+		msg := buildRequest(word)
+		byteData, _ := json.Marshal(msg)
+		err := producer.Produce(&kafka.Message{
+			TopicPartition: kafka.TopicPartition{Topic: &topic, Partition: 0},
+			Value:          byteData,
+		}, nil)
+		if err != nil {
+			fmt.Println("error", err)
 		}
-		p.Input() <- msg
-		time.Sleep(time.Second * 1)
-		fmt.Printf("send %v to kafka success\n", v)
 	}
+
+	// Wait for message deliveries before shutting down
+	producer.Flush(60 * 1000)
 }
