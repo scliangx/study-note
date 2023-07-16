@@ -101,4 +101,4 @@ services:
       - zookeeper3
       - kafka1
       - kafka2
-      - kafka3%      
+      - kafka3     
