@@ -91,7 +91,7 @@ EOF
 [root@k8s-master ~]# systemctl enable kubelet   
 
 # 初始化master节点(MASTER)
-[root@k8s-master ~]# kubeadm init  --apiserver-advertise-address=8.141.175.100 --image-repository registry.aliyuncs.com/google_containers --kubernetes-version v1.22.6 --service-cidr=10.96.0.0/12 --pod-network-cidr=10.244.0.0/16
+[root@k8s-master ~]# kubeadm init  --apiserver-advertise-address=127.0.0.1 --image-repository registry.aliyuncs.com/google_containers --kubernetes-version v1.22.6 --service-cidr=10.96.0.0/12 --pod-network-cidr=10.244.0.0/16
 
 [root@k8s-master ~]# mkdir -p $HOME/.kube
 [root@k8s-master ~]# cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
